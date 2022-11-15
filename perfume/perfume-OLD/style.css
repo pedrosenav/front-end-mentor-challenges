@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+    --dark-cyan: hsl(158, 36%, 37%);
+    --darker-cyan: hsl(156, 42%, 18%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+}
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+ */
+
+*{
+    margin: 0px;
+    font-family: 'Montserrat';
+}
+
+body{
+    background-color: var(--cream);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+    
+h1{
+    font: bold 2em 'Fraunces';
+    color: var(--very-dark-blue);
+}
+
+p{
+    font-size: 14px;
+    line-height: 1.6em;
+    color: var(--dark-grayish-blue);
+}
+
+p.type{
+    letter-spacing: 0.5em;
+    font-size: 0.7em;
+}
+
+p.price{
+    font: normal 2em 'Fraunces';
+    color: var(--dark-cyan);
+}
+
+p.off{
+    text-decoration: line-through;
+}
+
+main{
+    background-color: white;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.05);
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    margin: 40px;
+    max-width: 590px;
+    min-width: 520px;
+    border-radius: 15px;
+}
+
+div.image{
+    grid-column-start: 1;
+    background-image: url(assets/images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+
+    border-radius: inherit;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+ 
+div.desc{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+div.desc *{
+    margin: 10px 0px;
+}
+
+div.prices{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+button#cart{
+    background-color: var(--dark-cyan);
+    color: white;
+    font: bold 1em 'Montserrat';
+    
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+}
+
+button#cart::before{
+    content: url(assets/images/icon-cart.svg);
+    margin-right: 10px;
+}
+
+button#cart:focus, button#cart:hover{
+    border: none;
+    cursor: pointer;
+    background-color: var(--darker-cyan);   
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+    }
+}
