@@ -20,8 +20,6 @@ The designs were created to the following widths:
 - Desaturated blue: hsl(224, 23%, 55%)
 - Dark blue: hsl(223, 47%, 23%)
 
-## Typography
-
 ### Body Copy
 
 - Font size (paragraph): 16px
