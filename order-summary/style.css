@@ -30,7 +30,7 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1rem;
 
-    height: calc(100vh + 40px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
         justify-content: center;
