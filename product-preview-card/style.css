@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
-/* fonts */
-/* Fraunces */
+/* Footer attribution */
+@import url(../attribution.css);
+
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
-/* Montserrat */
+/* font-family: 'Fraunces', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
 
 /* css reset */
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
@@ -32,6 +34,7 @@ body {
 
     height: 100vh;
     display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     font-size: 1rem;

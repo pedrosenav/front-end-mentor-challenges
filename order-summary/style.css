@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* Footer attribution */
+@import url(../attribution.css);
+
 /* css reset */
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
@@ -20,11 +23,16 @@
 
 body {
     background-color: var(--pale-blue);
+    background-image: url("order-summary-component-main/images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1rem;
 
-    height: 100vh;
+    height: calc(100vh + 40px);
     display: flex;
+    flex-direction: column;
         justify-content: center;
         align-items: center;
 }
@@ -139,6 +147,10 @@ body {
     }
 
 @media all and (max-width: 420px) {
+    body {
+        background-image: url("order-summary-component-main/images/pattern-background-mobile.svg");
+    }
+    
     .order-content {
         padding: 35px 15px;
     }

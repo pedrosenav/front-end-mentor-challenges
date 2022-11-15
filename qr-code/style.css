@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* Footer attribution */
+@import url(../attribution.css);
+
 /* css reset */
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
